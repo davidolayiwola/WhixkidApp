@@ -1,3 +1,3 @@
 # Whizkid App
 
-Allows ICT students to practing on different ICT topic 
+Allows ICT students to practise on core ICT topics 

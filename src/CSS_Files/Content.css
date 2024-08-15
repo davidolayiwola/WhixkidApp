@@ -1,0 +1,82 @@
+/*Target extra small devices(small phones) */
+@media only screen and (max-width: 600px){
+
+}
+
+/*Target small devices(potrait tablet and large phones) */
+@media only screen and (min-width: 600px){
+
+}
+
+/*Target medium devices(landscape tablet and medium PC) */
+@media only screen and (min-width: 768px){
+	 .medium-devices {
+	 	display: flex;
+	 }
+
+	 .hamburger-box {
+	 	display: none;
+	 }
+
+	 .topic-container {
+	 	background-color: skyblue;
+	 	width: 35%;
+	 }
+
+	 .qst-board {
+	 	display: flex;
+	 	width: 65%;
+	 }
+
+	 .qst-panel {
+	 	display: flex;
+	 	flex-direction: column;
+	 	justify-content: space-between;
+	 	flex-grow: 1;
+	 }
+
+	 .current-topic {
+	    background-color: skyblue;
+	    border-left: 1px solid darkgray;
+	}
+
+	 .topics-container {
+	 	display: flex !important;
+	 	position: inherit !important;
+	 }
+
+	 .topics-container  button {
+	 	background-color: #eee;
+	 	border: none;
+	 }
+
+}
+
+/*Target large devices(large PC and small desktop) */
+@media only screen and (min-width: 992px){
+	#root {
+		height: 100vh;
+	}
+
+	.large-devices {
+
+	 	display: flex;
+	 }
+
+	 .medium-devices{
+	 	width: 82%;
+	 }
+
+	 .time-panel {
+	 	width: 18%;
+	 }
+
+}
+
+/*Target extra large devices(large desktop) */
+@media only screen and (min-width: 1200px){
+	.large-devices {
+	 	display: flex;
+	 }
+
+}

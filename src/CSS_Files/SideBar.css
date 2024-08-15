@@ -1,0 +1,51 @@
+.topic-container {
+    display: flex;
+    flex-direction: column;
+    background-color: skyblue;
+}
+
+.topic-header {
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    color: #450101;
+    border-bottom: 1px solid darkgray;
+}
+
+.topic-header span{
+    flex-grow: 1;
+    font-size: 1.5rem;
+}
+.hamburger-box {
+    display: grid;
+    width: 30px;
+    height: 30px;
+    place-content: center;
+    cursor: default;
+    border: 1px solid darkgray;
+    font-size: 2rem;
+}
+
+.topics-container {
+    display: none;
+    flex-direction: column;
+}
+
+.topics-container  button{
+    display: flex;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid darkgray;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 20px;
+    color: rgb(31, 29, 29);
+    background-color: skyblue;
+}
+
+.topics-container  button:hover{
+    color: white;
+    background-color: dodgerblue;
+}

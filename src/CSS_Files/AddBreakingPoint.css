@@ -1,0 +1,190 @@
+/*Target extra small devices(small phones) */
+@media only screen and (max-width: 600px){
+
+}
+
+/*Target small devices(potrait tablet and large phones) */
+@media only screen and (min-width: 600px){
+
+}
+
+/*Target medium devices(landscape tablet and medium PC) */
+@media only screen and (min-width: 768px){
+	/*Style header*/
+	.exam-prac {
+		position: relative;
+		/*height: 10vh;*/
+		font-size: 30px;
+		padding: 12px;
+	}
+
+	/*Hide hamburger on medium screen*/
+	.hamburger-box {
+	    display: none !important;
+	}
+
+	/*Streched container to keep SideBar, QuestionDisplayer*/
+	.medium-devices {
+		width: 100%;
+		height: 400px;
+		overflow: auto;
+	}
+
+	/*SideBar inside medium-devices container*/
+	.topic-container {
+    	position: revert;
+    	float: left;
+    	width: 30%;
+    	background-color: #eee;
+    	height: 100%;
+    	overflow: auto;
+	}
+
+	/*QuestionDisplayer inside medium-devices container*/
+	.qst-board { 
+		margin-top: revert;
+		float: left;
+    	width: 70%;
+    	height: 100%;
+	}
+
+	.pagination-box {
+		position: absolute;
+		bottom: 10px;
+		width: 100%;
+	}
+
+	/*TimePanel*/
+	.time-panel {
+		width: 100%;
+		/*height: 10vh;*/
+	}
+
+	/*Streched container to keep QuestionTracker*/
+	.qst-tracker { 
+    	width: 100%;
+    	/*height: 15vh;*/
+	}
+
+
+	.topics-container {
+		display: block !important;
+		width: 100%;
+	}
+
+	.btn-topic {
+	    font-size: 16px;
+	    text-align: left !important;
+	}
+
+	/*Footer*/
+	.page-foot {
+		/*height: 10vh;*/
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 20px;
+		padding: 10px 0 15px 0;
+	}  
+
+}
+
+/*Target large devices(large PC and small desktop) */
+@media only screen and (min-width: 992px){
+
+}
+
+/*Target extra large devices(large desktop) */
+@media only screen and (min-width: 1200px){
+	/*Style header*/
+	.exam-prac {
+		position: relative;
+		/*height: 10vh;*/
+		font-size: 34px;
+		padding: 15px;
+	}
+
+	/*Hide hamburger on large screen*/
+	.hamburger-box {
+	    display: none !important;
+	}
+
+	/*Main container to keep floated items*/
+	.section {
+		/*height: 80vh;*/
+		overflow: auto;
+	}
+
+	/*Streched container to keep SideBar, QuestionDisplayer and TimePanel*/
+	.large-devices {
+		width: 100%;
+		overflow: auto;
+		display: flex;/*Make Parent wrap around children*/
+		/*height: 400%;*/
+	}
+
+	/*Streched container to keep QuestionTracker*/
+	.qst-tracker { 
+    	width: 100%;
+    	/*height: 20vh;*/
+	}
+
+	/*Float medium-devices container*/
+	.medium-devices {
+		float: left ;
+		overflow: auto;
+		width: 80%;
+		height:auto !important;
+	}
+
+	/*TimePanel*/
+	.time-panel {
+		float: left ;
+		width: 20%;
+		height: auto !important;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid lightgray;
+	}
+
+	/*SideBar*/
+	.topic-container {
+    	position: revert;
+    	float: left;
+    	width: 30%;
+    	background-color: #eee;
+    	border: 1px solid lightgray;
+	}
+
+	/*QuestionDisplayer*/
+	.qst-board { 
+		margin-top: revert;
+		float: left;
+    	width: 70%;
+    	position: relative;
+    	height: 100% !important;
+	}
+
+	.pagination-box {
+		position: absolute;
+		bottom: 10px;
+	}
+
+	.topics-container {
+		display: block !important;
+		float: revert;
+		width: 100%;
+	}
+
+	.btn-topic {
+	    font-size: 16px;
+	}
+
+	/*Footer*/
+	.page-foot {
+		/*height: 10vh;*/
+		padding: 12px 0 15px 0;
+		font-size: 20px;
+	}  
+}

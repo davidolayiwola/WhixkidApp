@@ -1,0 +1,18 @@
+.time-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-top: 1px solid lightgrey;
+    background-color: #eee;
+} 
+
+.time-yourself button {
+    font-size: 1rem;
+    color: rgb(20, 20, 20, 0.9);
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    border: 1px solid dodgerblue;
+}

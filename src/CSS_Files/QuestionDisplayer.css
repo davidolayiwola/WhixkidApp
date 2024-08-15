@@ -1,0 +1,13 @@
+.qst-board {
+	display: flex;
+	flex-direction: column;
+	word-wrap: break-word;
+	background-color: aliceblue;
+}
+
+.current-topic {
+	display: flex;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid darkgray;
+}

@@ -1,0 +1,19 @@
+.qst-tracker {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: skyblue;
+    padding: 10px 5px;
+
+}
+
+.qst-tracker button {
+    width: 30px;
+    min-width: 30px;
+    height: 24px;
+    margin: 0 4px 4px 0;
+    font-size: 0.9rem;
+    border: none;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+}

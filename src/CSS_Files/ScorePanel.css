@@ -1,0 +1,19 @@
+.score-panel {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 0;
+	font-size: 1.2rem;
+}
+
+.score-panel button {
+	background-color: dodgerblue;
+	color: white;
+	border: none;
+	padding: 0.5rem;
+	font-size: 1rem;
+	border-radius: 10px;
+}

@@ -1,0 +1,42 @@
+.current-qst, .show-ans, .pagination-box {
+    padding: 8px;
+}
+
+.current-qst , ul li{
+    font-size: 1rem;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 0 0 5px 5px;
+}
+
+.pagination-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.next-btn {
+    padding: 4px 6px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 1px solid darkgray;
+    background-color: dodgerblue;
+    color: white;
+}
+
+
+.submit-work {
+    background-color: darkmagenta;
+    color:white
+}

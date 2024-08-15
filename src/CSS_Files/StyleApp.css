@@ -1,0 +1,245 @@
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body {
+    background-color: #eee;
+  }
+
+  #root {
+    background-color: #eee;
+    max-width: 1500px;
+    margin: auto;
+  }
+
+ /*Style Header Component*/
+.exam-prac{
+    position: fixed;
+    top: 0;
+    font-size: 22px;
+    border-bottom: 1px solid white;
+    z-Index: 2
+}  
+
+ /*Style Header and  Footer Component*/
+.page-foot, .exam-prac{
+    width: 100%;
+    padding: 5px;
+    background-color: #579dcf;
+    color: white;
+}  
+
+ /*Style Footer Component*/
+.page-foot{
+    font-size: 18px;
+    text-align: center;
+}  
+
+/*Style SideBar Component*/
+.topic-container {
+    position: fixed;
+    width: 100%;
+    top: 40px;
+    z-index: 1;
+    background-color: #eee;
+}
+
+.topic-header {
+    padding: 5px;
+    font-size: 18px;
+    color: rgb(31, 29, 29);
+    overflow: auto;
+    border-bottom: 1px solid darkgray;
+}
+
+.bar {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: rgb(31, 29, 29);
+}
+.hamburger-box {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    padding: 3px;
+    float: right;
+}
+
+#close-btn {
+    display: none;
+}
+
+.middle {
+    margin: 4px 0;
+}
+
+.bottom-bar {
+    margin: 7px 0;
+    transform: rotate(-45deg);
+}
+
+.to-overlay {
+    margin-top: -9px;
+    transform: rotate(45deg);
+}
+
+.btn-topic {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(31, 29, 29);
+    background-color: #eee;
+}
+
+.btn-topic:hover {
+   background-color: skyblue;
+}
+
+.topics-container {
+    display: none;
+    color: rgb(84, 69, 69);
+    /*overflow-y: scroll;*/
+}
+
+/*
+    Style QuestionDidpalyer Component
+*/
+.qst-board {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+    margin-top: 71px;
+    color: rgb(84, 69, 69);
+    position: relative;
+}
+
+.current-topic, .current-qst, .show-ans, .pagination-box {
+    padding: 8px;
+}
+
+.current-topic, .current-qst, .show-ans , ul li{
+    font-size: 15px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.current-topic {
+    font-size: 16px;
+    border-bottom: 1px solid lightgray;
+}
+
+ul li {
+    padding: 0 0 5px 5px;
+}
+
+.pagination-box {
+    position: relative;
+    overflow: auto;
+}
+
+.next-btn {
+    padding: 4px 6px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid darkgray;
+}
+
+.nxt-qst {
+    float: right;
+}
+
+.submit-work {
+    float: right;
+    background-color: red;
+}
+
+
+/*Style Confirm Alert Dialog*/
+.confirm-overlay {
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm-body {
+    width: 70vw;
+    border: 1px solid darkgray;
+    background-color: #eee;
+    border-radius: 10px;
+}
+.confirm-btn-holder {
+    text-align: right;
+    padding: 10px;
+}
+.confirm-btn-holder button {
+    padding: 3px 8px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+.confirm-title {
+    padding: 5px 10px;
+    border-bottom: 1px solid gray;
+}
+.confirm-description {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+/*Style QuestionTracker Component*/
+.qst-tracker {
+    background-color: skyblue;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.qst-tracker button {
+    width: 30px;
+    height: 24px;
+    margin: 0 4px 4px 0;
+    font-size: 13px;
+    border: none;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+}
+
+/*Style TimePanel Component*/
+.time-panel {
+    background-color: #eee;
+    padding: 8px;
+    text-align: center;
+    border-top: 1px solid lightgrey;
+}
+
+.display-time-left {
+    display: none;
+} 
+
+.select-box {
+    display: none;
+} 
+
+.time-yourself button {
+    font-size: 15px;
+    color: rgb(20, 20, 20, 0.9);
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    border: 1px solid darkgray;
+}

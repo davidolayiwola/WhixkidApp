@@ -1,0 +1,42 @@
+.confirm-overlay {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.confirm-body {
+    width: 350px;
+    height: 150px;
+    border: 1px solid darkgray;
+    background-color: #eee;
+    border-radius: 10px;
+}
+.confirm-btn-holder {
+    text-align: right;
+    padding: 10px;
+}
+.confirm-btn-holder button {
+    margin-right: 0.5rem;
+    padding: 3px 8px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+.confirm-title {
+    padding: 5px 10px;
+    border-bottom: 1px solid gray;
+    font-size: 1.2rem;
+}
+.confirm-description {
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+

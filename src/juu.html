@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript" src="QuestionBank.js"></script>
+</head>
+<body>
+	<div id="ui"></div>
+	<script >
+		const ele = document.getElementById('ui')
+		ele.innerHTML += '[<br>'//Opening [ for file
+		for(let i = 0; i < Topics.length; i++){
+			ele.innerHTML += '&nbsp;&nbsp;{<br>' +//Opening { for each topic
+			'&nbsp;&nbsp;&nbsp;&nbsp;"id": ' + Topics[i].id + ',<br>' +//Topic id
+			'&nbsp;&nbsp;&nbsp;&nbsp;"topic": ' + '"' + Topics[i].topic + '",<br>' + //Topic id
+			'&nbsp;&nbsp;&nbsp;&nbsp;"qstn": ' + '[<br>' //Opening [ for topic question
+			for(let k = 0; k < Topics[i].qstn.length; k++){
+				ele.innerHTML += '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>' +//Opening { for each question in a topic
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": ' + Topics[i].qstn[k].id + ',<br>' + 
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"question": ' + '"' + Topics[i].qstn[k].question + '",<br>' +
+				'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"optns": ' + '[<br>' //Opening [ for each question option
+				for(let j = 0; j < Topics[i].qstn[k].optns.length; j++){
+					if(j === Topics[i].qstn[k].optns.length - 1){
+						ele.innerHTML += '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"' + Topics[i].qstn[k].optns[j] + '"<br>' //******
+					}else{
+						ele.innerHTML += '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"' + Topics[i].qstn[k].optns[j] + '",<br>' //******
+					}
+				}
+				ele.innerHTML += '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br>' //Closing ] for each question option
+				if(k === Topics[i].qstn.length - 1){
+					ele.innerHTML += '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>' //Closing } for each question in a topic******
+				}else{
+					ele.innerHTML += '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>' //Closing } for each question in a topic******
+				}
+			}
+			ele.innerHTML += '&nbsp;&nbsp;&nbsp;&nbsp;],<br>' +//Closing ] for topic question
+			'&nbsp;&nbsp;&nbsp;&nbsp;"ans": ' + '[<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' //Opening [ for each topic answer
+			for(let j = 0; j < Topics[i].ans.length; j++){
+				if(j === Topics[i].ans.length - 1){
+					ele.innerHTML += '"' + Topics[i].ans[j] + '"' //******
+				}else{
+					ele.innerHTML += '"' + Topics[i].ans[j] + '",' //******
+				}
+			}
+			ele.innerHTML += '<br>&nbsp;&nbsp;&nbsp;&nbsp;]<br>' //Closing ] for each topic answer
+			ele.innerHTML += '&nbsp;&nbsp;},<br>'//Opening } for each topic******
+		}
+
+		ele.innerHTML += ']'//Closing ] for file
+
+	</script>
+</body>
+</html>
